@@ -23,6 +23,7 @@ class FoodFragment : Fragment(R.layout.fragment_food) {
         _binding = FragmentFoodBinding.bind(view)
 
         val sharedPref=MySharedPref(requireContext())
+
         adapter.size=sharedPref.getSize()!!
         binding.rvFoodList.adapter=adapter
         adapter.submitList(foodList)

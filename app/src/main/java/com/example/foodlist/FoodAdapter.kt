@@ -25,7 +25,7 @@ class FoodAdapter: ListAdapter<Food, RecyclerView.ViewHolder>(DIFF_CALLBACK){
     }
 
     private lateinit var binding: FoodListItemsBinding
-    var size="24dp"
+    var size="24"
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
             RecyclerView.ViewHolder {

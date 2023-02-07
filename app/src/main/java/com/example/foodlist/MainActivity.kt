@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(R.id.foodFragment, R.id.settingFragment)
         )
+        setupActionBarWithNavController(navController, appBarConfiguration)
         binding.bottomNav.setupWithNavController(navController)
 
     }
